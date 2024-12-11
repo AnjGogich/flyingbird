@@ -1,0 +1,255 @@
+{
+	"projectFormatVersion": 1,
+	"savedWithRelease": 41600,
+	"name": "флберд",
+	"runtime": "c3",
+	"useWorker": "auto",
+	"bundleAddons": false,
+	"usedAddons": [
+		{
+			"type": "plugin",
+			"id": "Button",
+			"name": "Кнопка",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Sprite",
+			"name": "Спрайт",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Text",
+			"name": "Текст",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "TiledBg",
+			"name": "Тайловый фон",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Touch",
+			"name": "Тач",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "Platform",
+			"name": "Платформер",
+			"author": "Scirra",
+			"bundled": false
+		}
+	],
+	"uniqueId": "q10dfda1u5l",
+	"objectTypes": {
+		"items": [
+			"небо",
+			"птица",
+			"монета",
+			"название",
+			"играть",
+			"правила",
+			"фонправила",
+			"правилатекст",
+			"меню",
+			"фоннеба",
+			"столб",
+			"счет",
+			"земля",
+			"фонптицы",
+			"низземли",
+			"верхземли",
+			"Тач",
+			"трубаверх",
+			"счетМонет"
+		],
+		"subfolders": []
+	},
+	"autosaveData": null,
+	"containers": [],
+	"families": {
+		"items": [],
+		"subfolders": []
+	},
+	"layouts": {
+		"items": [
+			"меню",
+			"правила",
+			"игра"
+		],
+		"subfolders": []
+	},
+	"eventSheets": {
+		"items": [
+			"Список событий 1",
+			"Список событий 2"
+		],
+		"subfolders": []
+	},
+	"rootFileFolders": {
+		"script": {
+			"items": [],
+			"subfolders": []
+		},
+		"sound": {
+			"items": [],
+			"subfolders": []
+		},
+		"music": {
+			"items": [],
+			"subfolders": []
+		},
+		"video": {
+			"items": [],
+			"subfolders": []
+		},
+		"font": {
+			"items": [],
+			"subfolders": []
+		},
+		"icon": {
+			"items": [
+				{
+					"name": "Иконка-512.png",
+					"type": "image/png",
+					"sid": 260224347234007,
+					"icon-info": {
+						"purpose": "app-icon"
+					}
+				},
+				{
+					"name": "Иконка-16.png",
+					"type": "image/png",
+					"sid": 250815007461825,
+					"icon-info": {
+						"purpose": "app-icon"
+					}
+				},
+				{
+					"name": "Иконка-32.png",
+					"type": "image/png",
+					"sid": 210487141619067,
+					"icon-info": {
+						"purpose": "app-icon"
+					}
+				},
+				{
+					"name": "Иконка-64.png",
+					"type": "image/png",
+					"sid": 849830375914540,
+					"icon-info": {
+						"purpose": "app-icon"
+					}
+				},
+				{
+					"name": "Иконка-128.png",
+					"type": "image/png",
+					"sid": 896331796669117,
+					"icon-info": {
+						"purpose": "app-icon"
+					}
+				},
+				{
+					"name": "Иконка-256.png",
+					"type": "image/png",
+					"sid": 977685984758045,
+					"icon-info": {
+						"purpose": "app-icon"
+					}
+				},
+				{
+					"name": "Иконка-загрузки.png",
+					"type": "image/png",
+					"sid": 943449264240814,
+					"icon-info": {
+						"purpose": "loading-logo"
+					}
+				}
+			],
+			"subfolders": []
+		},
+		"general": {
+			"items": [],
+			"subfolders": []
+		}
+	},
+	"timelines": {
+		"items": [
+			"Шкала 1"
+		],
+		"subfolders": [
+			{
+				"items": [],
+				"subfolders": []
+			}
+		]
+	},
+	"flowcharts": {
+		"items": [],
+		"subfolders": []
+	},
+	"properties": {
+		"description": "",
+		"version": "1.0.0.0",
+		"author": "",
+		"authorEmail": "",
+		"authorWebsite": "",
+		"appId": "",
+		"pixelRounding": false,
+		"zAxisScale": "normalized",
+		"fov": 0.7853981633974483,
+		"useLoaderLayout": false,
+		"fullscreenMode": "letterbox-scale",
+		"fullscreenQuality": "high",
+		"viewportFit": "auto",
+		"backgroundColor": [
+			0,
+			0,
+			0,
+			0
+		],
+		"splashColor": [
+			1,
+			1,
+			1,
+			0
+		],
+		"useThemeColor": false,
+		"themeColor": [
+			1,
+			1,
+			1,
+			0
+		],
+		"orientations": "landscape",
+		"webgpu": "auto",
+		"gpuPreference": "high-performance",
+		"scriptsType": "module",
+		"framerateMode": "vsync",
+		"sampling": "trilinear",
+		"downscaling": "medium",
+		"renderingMode": "auto",
+		"anisotropicFiltering": "auto",
+		"zNear": 1,
+		"zFar": 10000,
+		"maxSpriteSheetSize": 2048,
+		"loaderStyle": "splash",
+		"preloadSounds": true,
+		"cordovaiOSScheme": "app",
+		"cordovaAndroidScheme": "https",
+		"exportFileStructure": "folders",
+		"uidAllocationMode": "increment"
+	},
+	"viewportWidth": 500,
+	"viewportHeight": 500,
+	"firstLayout": null
+}

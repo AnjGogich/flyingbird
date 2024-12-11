@@ -1,0 +1,69 @@
+{
+	"name": "Список событий 2",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-clicked",
+					"objectClass": "играть",
+					"sid": 749142684376899
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 941870624033472,
+					"parameters": {
+						"layout": "игра"
+					}
+				}
+			],
+			"sid": 149783736812211
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-clicked",
+					"objectClass": "меню",
+					"sid": 437843722455605
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 201695645909426,
+					"parameters": {
+						"layout": "меню"
+					}
+				}
+			],
+			"sid": 568193796719738
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-clicked",
+					"objectClass": "правила",
+					"sid": 839375053914064
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 500195583413709,
+					"parameters": {
+						"layout": "правила"
+					}
+				}
+			],
+			"sid": 470705643143060
+		}
+	],
+	"sid": 536743391795920
+}

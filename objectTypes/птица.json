@@ -1,0 +1,69 @@
+{
+	"name": "птица",
+	"plugin-id": "Sprite",
+	"sid": 741399204793231,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Platform",
+			"name": "Платформер",
+			"sid": 550859128202979
+		}
+	],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 242,
+						"height": 208,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 7194214,
+						"collisionPoly": {
+							"points": [
+								0.7352333495381627,
+								0,
+								1,
+								0.5351351351351351,
+								0.8795272241127867,
+								0.8787032224532253,
+								0.36764705882352944,
+								1,
+								0.2916565386485173,
+								0.9771634615384608,
+								0.20782693242586292,
+								0.879242463617463,
+								0.014705882352941176,
+								0.5297297297297298,
+								0,
+								0.372972972972973,
+								0.05177442877977634,
+								0.2876884095634096,
+								0.25,
+								0.11891891891891893
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 517286844453594,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

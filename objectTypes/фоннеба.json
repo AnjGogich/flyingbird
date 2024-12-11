@@ -1,0 +1,22 @@
+{
+	"name": "фоннеба",
+	"plugin-id": "TiledBg",
+	"sid": 581554967819754,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"image": {
+		"width": 575,
+		"height": 500,
+		"originX": 0.5,
+		"originY": 0.5,
+		"originalSource": "",
+		"exportFormat": "lossless",
+		"exportQuality": 0.8,
+		"fileType": "image/png",
+		"imageSpriteId": 4798016,
+		"useCollisionPoly": true,
+		"tag": ""
+	}
+}

@@ -1,0 +1,473 @@
+{
+	"name": "игра",
+	"layers": [
+		{
+			"name": "Слой 0",
+			"overriden": 0,
+			"subLayers": [],
+			"instances": [
+				{
+					"type": "фоннеба",
+					"properties": {
+						"initially-visible": true,
+						"origin": "top-left",
+						"wrap-horizontal": "repeat",
+						"wrap-vertical": "repeat",
+						"image-offset-x": 0,
+						"image-offset-y": 0,
+						"image-scale-x": 1,
+						"image-scale-y": 1,
+						"image-angle": 0,
+						"enable-tile-randomization": false,
+						"x-random": 1,
+						"y-random": 1,
+						"angle-random": 1,
+						"blend-margin-x": 0.1,
+						"blend-margin-y": 0.1
+					},
+					"uid": 16,
+					"sid": 744216464450456,
+					"tags": "",
+					"instanceVariables": {},
+					"behaviors": {},
+					"instanceFolderItem": {
+						"sid": 744216464450456,
+						"expanded": true,
+						"folderName": "",
+						"indexInFolder": -1,
+						"folderNestingLevel": -1
+					},
+					"showing": true,
+					"locked": true,
+					"world": {
+						"x": 0,
+						"y": 0,
+						"width": 2300,
+						"height": 500,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "птица",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 17,
+					"sid": 172823675064882,
+					"tags": "",
+					"instanceVariables": {},
+					"behaviors": {
+						"Платформер": {
+							"properties": {
+								"max-speed": 0,
+								"acceleration": 300,
+								"deceleration": 1500,
+								"jump-strength": 0,
+								"gravity": 1500,
+								"max-fall-speed": 1000,
+								"double-jump": false,
+								"jump-sustain": 0,
+								"default-controls": true,
+								"enabled": true
+							}
+						}
+					},
+					"instanceFolderItem": {
+						"sid": 172823675064882,
+						"expanded": true,
+						"folderName": "",
+						"indexInFolder": -1,
+						"folderNestingLevel": -1
+					},
+					"showing": true,
+					"locked": false,
+					"world": {
+						"x": 52.456879757457045,
+						"y": 225.46115619020304,
+						"width": 85.8259601361204,
+						"height": 88.97106053529807,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "столб",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 18,
+					"sid": 230476553514760,
+					"tags": "",
+					"instanceVariables": {
+						"Scored": false
+					},
+					"behaviors": {},
+					"instanceFolderItem": {
+						"sid": 230476553514760,
+						"expanded": true,
+						"folderName": "",
+						"indexInFolder": -1,
+						"folderNestingLevel": -1
+					},
+					"showing": true,
+					"locked": false,
+					"world": {
+						"x": 566.7867631992355,
+						"y": 658.6972201352366,
+						"width": 57.71739130434783,
+						"height": 359.62291083040316,
+						"originX": 0.4858757062146893,
+						"originY": 0.47554806070826305,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0.00016802296107487624,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "счет",
+					"properties": {
+						"text": "Счет:0",
+						"enable-bbcode": true,
+						"font": "monospace",
+						"size": 25,
+						"line-height": 0,
+						"bold": false,
+						"italic": false,
+						"color": [
+							0.17254901960784313,
+							0.42745098039215684,
+							0.36470588235294116,
+							1
+						],
+						"horizontal-alignment": "left",
+						"vertical-alignment": "top",
+						"wrapping": "word",
+						"text-direction": "ltr",
+						"icon-set": -1,
+						"initially-visible": true,
+						"origin": "top-left",
+						"read-aloud": false
+					},
+					"uid": 21,
+					"sid": 185491177026229,
+					"tags": "",
+					"instanceVariables": {},
+					"behaviors": {},
+					"instanceFolderItem": {
+						"sid": 185491177026229,
+						"expanded": true,
+						"folderName": "",
+						"indexInFolder": -1,
+						"folderNestingLevel": -1
+					},
+					"showing": true,
+					"locked": false,
+					"world": {
+						"x": 1.114956636587067,
+						"y": 0.6153155492877858,
+						"width": 111.99016460618222,
+						"height": 38.19616146438085,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 6.280834792343373,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "низземли",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 24,
+					"sid": 707074632502714,
+					"tags": "",
+					"instanceVariables": {},
+					"behaviors": {},
+					"instanceFolderItem": {
+						"sid": 707074632502714,
+						"expanded": true,
+						"folderName": "",
+						"indexInFolder": -1,
+						"folderNestingLevel": -1
+					},
+					"showing": true,
+					"locked": false,
+					"world": {
+						"x": 1155,
+						"y": 530,
+						"width": 2343.475855474402,
+						"height": 41.680896113653375,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "верхземли",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 23,
+					"sid": 861834205257008,
+					"tags": "",
+					"instanceVariables": {},
+					"behaviors": {},
+					"instanceFolderItem": {
+						"sid": 861834205257008,
+						"expanded": true,
+						"folderName": "",
+						"indexInFolder": -1,
+						"folderNestingLevel": -1
+					},
+					"showing": true,
+					"locked": false,
+					"world": {
+						"x": 1152,
+						"y": 494,
+						"width": 2336.213305102085,
+						"height": 36.21678847073281,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "трубаверх",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 19,
+					"sid": 476748950760813,
+					"tags": "",
+					"instanceVariables": {},
+					"behaviors": {},
+					"instanceFolderItem": {
+						"sid": 476748950760813,
+						"expanded": true,
+						"folderName": "",
+						"indexInFolder": -1,
+						"folderNestingLevel": -1
+					},
+					"showing": true,
+					"locked": false,
+					"world": {
+						"x": 562.3226555563149,
+						"y": -184.69578580698067,
+						"width": 57.71739130434783,
+						"height": 373.6718033874565,
+						"originX": 0.4858757062146893,
+						"originY": 0.47554806070826305,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 3.1419503133554496,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "монета",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 13,
+					"sid": 297747243238030,
+					"tags": "",
+					"instanceVariables": {},
+					"behaviors": {},
+					"instanceFolderItem": {
+						"sid": 297747243238030,
+						"expanded": true,
+						"folderName": "",
+						"indexInFolder": -1,
+						"folderNestingLevel": -1
+					},
+					"showing": true,
+					"locked": false,
+					"world": {
+						"x": 330.3292348030674,
+						"y": -37.633130832982424,
+						"width": 69.10306673041464,
+						"height": 65.71074380165294,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "счетМонет",
+					"properties": {
+						"text": "Монеты                      :",
+						"enable-bbcode": true,
+						"font": "Arial",
+						"size": 12,
+						"line-height": 0,
+						"bold": false,
+						"italic": false,
+						"color": [
+							0,
+							0,
+							0,
+							1
+						],
+						"horizontal-alignment": "left",
+						"vertical-alignment": "top",
+						"wrapping": "word",
+						"text-direction": "ltr",
+						"icon-set": -1,
+						"initially-visible": true,
+						"origin": "top-left",
+						"read-aloud": false
+					},
+					"uid": 12,
+					"sid": 437840924350619,
+					"tags": "",
+					"instanceVariables": {},
+					"behaviors": {},
+					"instanceFolderItem": {
+						"sid": 437840924350619,
+						"expanded": true,
+						"folderName": "",
+						"indexInFolder": -1,
+						"folderNestingLevel": -1
+					},
+					"showing": true,
+					"locked": false,
+					"world": {
+						"x": 1.1166505106856306,
+						"y": 42.96245710176085,
+						"width": 200,
+						"height": 30,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				}
+			],
+			"sid": 692828601722959,
+			"effectTypes": [],
+			"isInitiallyVisible": true,
+			"isInitiallyInteractive": true,
+			"isHTMLElementsLayer": false,
+			"color": [
+				1,
+				1,
+				1,
+				1
+			],
+			"backgroundColor": [
+				1,
+				1,
+				1,
+				1
+			],
+			"isTransparent": false,
+			"parallaxX": 1,
+			"parallaxY": 1,
+			"scaleRate": 1,
+			"forceOwnTexture": false,
+			"renderingMode": "3d",
+			"drawOrder": "z-order",
+			"useRenderCells": false,
+			"blendMode": "normal",
+			"zElevation": 0,
+			"global": false
+		}
+	],
+	"scene-graphs-folder-root": {
+		"items": [],
+		"subfolders": []
+	},
+	"sid": 967214216480315,
+	"nonworld-instances": [],
+	"effectTypes": [],
+	"width": 600,
+	"height": 500,
+	"unboundedScrolling": false,
+	"vpX": 0.5,
+	"vpY": 0.5,
+	"projection": "perspective",
+	"eventSheet": "Список событий 1"
+}

@@ -1,0 +1,606 @@
+{
+	"name": "Список событий 1",
+	"events": [
+		{
+			"eventType": "variable",
+			"name": "Scored",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 120904525214928
+		},
+		{
+			"eventType": "variable",
+			"name": "монеты",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 735092906810835
+		},
+		{
+			"eventType": "variable",
+			"name": "JumpStrength",
+			"type": "number",
+			"initialValue": "500",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": true,
+			"sid": 593142656238242
+		},
+		{
+			"eventType": "variable",
+			"name": "SCROLLSPEED",
+			"type": "number",
+			"initialValue": "300",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": true,
+			"sid": 908701863017859
+		},
+		{
+			"eventType": "variable",
+			"name": "SecondsPerObstade",
+			"type": "number",
+			"initialValue": "1",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": true,
+			"sid": 392205730058444
+		},
+		{
+			"eventType": "script",
+			"script": "начало"
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 570692870211212
+				}
+			],
+			"actions": [
+				{
+					"id": "set-text",
+					"objectClass": "счет",
+					"sid": 847927462510505,
+					"parameters": {
+						"text": "0"
+					}
+				},
+				{
+					"id": "set-x",
+					"objectClass": "верхземли",
+					"sid": 965243238464943,
+					"parameters": {
+						"x": "0"
+					}
+				},
+				{
+					"id": "set-x",
+					"objectClass": "низземли",
+					"sid": 815776557961976,
+					"parameters": {
+						"x": "0"
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 911806383717517,
+					"parameters": {
+						"variable": "Scored",
+						"value": "0"
+					}
+				},
+				{
+					"id": "destroy",
+					"objectClass": "столб",
+					"sid": 933517495562983
+				},
+				{
+					"id": "set-angle",
+					"objectClass": "птица",
+					"sid": 409098151501370,
+					"parameters": {
+						"angle": "320"
+					}
+				},
+				{
+					"id": "set-vector-y",
+					"objectClass": "птица",
+					"sid": 988183024420545,
+					"behaviorType": "Платформер",
+					"parameters": {
+						"vector-y": "-JumpStrength"
+					}
+				}
+			],
+			"sid": 158906777772233
+		},
+		{
+			"eventType": "script",
+			"script": "движение"
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-any-touch-start",
+					"objectClass": "Тач",
+					"sid": 731850488958794
+				}
+			],
+			"actions": [
+				{
+					"id": "set-angle",
+					"objectClass": "птица",
+					"sid": 638517025507444,
+					"parameters": {
+						"angle": "320"
+					}
+				},
+				{
+					"id": "set-vector-y",
+					"objectClass": "птица",
+					"sid": 242814850913202,
+					"behaviorType": "Платформер",
+					"parameters": {
+						"vector-y": "-JumpStrength"
+					}
+				}
+			],
+			"sid": 751543123563003
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "every-tick",
+					"objectClass": "System",
+					"sid": 598762483330482
+				}
+			],
+			"actions": [
+				{
+					"id": "rotate-clockwise",
+					"objectClass": "птица",
+					"sid": 303445567946610,
+					"parameters": {
+						"degrees": "60 *  dt"
+					}
+				}
+			],
+			"sid": 866747921618963
+		},
+		{
+			"eventType": "script",
+			"script": "столкновение"
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-overlapping-another-object",
+					"objectClass": "птица",
+					"sid": 272864317182703,
+					"parameters": {
+						"object": "верхземли"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 488803340882349,
+					"parameters": {
+						"layout": "меню"
+					}
+				}
+			],
+			"sid": 475879235910985
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-overlapping-another-object",
+					"objectClass": "птица",
+					"sid": 603643023768810,
+					"parameters": {
+						"object": "столб"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 219200731501786,
+					"parameters": {
+						"layout": "меню"
+					}
+				}
+			],
+			"sid": 703787274670081
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-overlapping-another-object",
+					"objectClass": "птица",
+					"sid": 586600842351983,
+					"parameters": {
+						"object": "трубаверх"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 525744178351682,
+					"parameters": {
+						"layout": "меню"
+					}
+				}
+			],
+			"sid": 554711980392258
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-outside-layout",
+					"objectClass": "птица",
+					"sid": 430332312537039
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 927144686085286,
+					"parameters": {
+						"layout": "меню"
+					}
+				}
+			],
+			"sid": 415732649082276
+		},
+		{
+			"eventType": "script",
+			"script": "счет"
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-x",
+					"objectClass": "столб",
+					"sid": 417433832763847,
+					"parameters": {
+						"comparison": 3,
+						"x-co-ordinate": "птица.X"
+					}
+				},
+				{
+					"id": "is-boolean-instance-variable-set",
+					"objectClass": "столб",
+					"sid": 309919371389673,
+					"parameters": {
+						"instance-variable": "Scored"
+					},
+					"isInverted": true
+				}
+			],
+			"actions": [
+				{
+					"id": "add-to-eventvar",
+					"objectClass": "System",
+					"sid": 988335653915286,
+					"parameters": {
+						"variable": "Scored",
+						"value": "1"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "счет",
+					"sid": 378710172905868,
+					"parameters": {
+						"text": "Scored"
+					}
+				},
+				{
+					"id": "set-boolean-instvar",
+					"objectClass": "столб",
+					"sid": 527345737563041,
+					"parameters": {
+						"instance-variable": "Scored",
+						"value": "true"
+					}
+				}
+			],
+			"sid": 431712942824450
+		},
+		{
+			"eventType": "script",
+			"script": "заднийфон"
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-x",
+					"objectClass": "низземли",
+					"sid": 693258406471017,
+					"parameters": {
+						"comparison": 3,
+						"x-co-ordinate": "-560"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-x",
+					"objectClass": "низземли",
+					"sid": 762874933357064,
+					"parameters": {
+						"x": "0"
+					}
+				}
+			],
+			"sid": 738007798818921
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-x",
+					"objectClass": "верхземли",
+					"sid": 760735339659424,
+					"parameters": {
+						"comparison": 3,
+						"x-co-ordinate": "-410"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-x",
+					"objectClass": "верхземли",
+					"sid": 164438191808506,
+					"parameters": {
+						"x": "0"
+					}
+				}
+			],
+			"sid": 243014665668316
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "every-tick",
+					"objectClass": "System",
+					"sid": 358597877839148
+				}
+			],
+			"actions": [
+				{
+					"id": "set-x",
+					"objectClass": "столб",
+					"sid": 450057230495150,
+					"parameters": {
+						"x": "столб.X-SCROLLSPEED* dt"
+					}
+				},
+				{
+					"id": "set-x",
+					"objectClass": "трубаверх",
+					"sid": 902325543222342,
+					"parameters": {
+						"x": "трубаверх.X-SCROLLSPEED*dt"
+					}
+				},
+				{
+					"id": "set-x",
+					"objectClass": "верхземли",
+					"sid": 205029544412157,
+					"parameters": {
+						"x": "верхземли.X-SCROLLSPEED*dt"
+					}
+				},
+				{
+					"id": "set-x",
+					"objectClass": "низземли",
+					"sid": 119417847109964,
+					"parameters": {
+						"x": "низземли.X-SCROLLSPEED"
+					}
+				},
+				{
+					"id": "set-x",
+					"objectClass": "монета",
+					"sid": 687936662324092,
+					"parameters": {
+						"x": "монета.X-SCROLLSPEED*dt"
+					}
+				}
+			],
+			"sid": 873560300239621
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-x",
+					"objectClass": "трубаверх",
+					"sid": 448952274133306,
+					"parameters": {
+						"comparison": 2,
+						"x-co-ordinate": "-50"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "destroy",
+					"objectClass": "трубаверх",
+					"sid": 729498712657912
+				}
+			],
+			"sid": 302340722013199
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-x",
+					"objectClass": "столб",
+					"sid": 200608826751284,
+					"parameters": {
+						"comparison": 2,
+						"x-co-ordinate": "-50"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "destroy",
+					"objectClass": "столб",
+					"sid": 869815335445739
+				}
+			],
+			"sid": 443161258882007
+		},
+		{
+			"eventType": "script",
+			"script": "препятствие"
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "every-x-seconds",
+					"objectClass": "System",
+					"sid": 602596170607611,
+					"parameters": {
+						"interval-seconds": "SecondsPerObstade"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "create-object",
+					"objectClass": "System",
+					"sid": 344521854770073,
+					"parameters": {
+						"object-to-create": "трубаверх",
+						"layer": "0",
+						"x": "400",
+						"y": "random(-250,10)",
+						"create-hierarchy": false,
+						"template-name": "\"\""
+					}
+				},
+				{
+					"id": "create-object",
+					"objectClass": "System",
+					"sid": 256691579903759,
+					"parameters": {
+						"object-to-create": "столб",
+						"layer": "0",
+						"x": "400",
+						"y": "трубаверх.Y+600",
+						"create-hierarchy": false,
+						"template-name": "\"\""
+					}
+				},
+				{
+					"id": "move-to-top",
+					"objectClass": "счет",
+					"sid": 542590192285016
+				},
+				{
+					"id": "set-boolean-instvar",
+					"objectClass": "столб",
+					"sid": 342605988585981,
+					"parameters": {
+						"instance-variable": "Scored",
+						"value": "false"
+					}
+				}
+			],
+			"sid": 329413369916336
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "every-x-seconds",
+					"objectClass": "System",
+					"sid": 345303443284830,
+					"parameters": {
+						"interval-seconds": "SecondsPerObstade"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "create-object",
+					"objectClass": "System",
+					"sid": 310993983306316,
+					"parameters": {
+						"object-to-create": "монета",
+						"layer": "0",
+						"x": "400",
+						"y": "трубаверх.Y+360",
+						"create-hierarchy": false,
+						"template-name": "\"\""
+					}
+				}
+			],
+			"sid": 691510197788740
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "монета",
+					"sid": 230162955866322,
+					"parameters": {
+						"object": "птица"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "destroy",
+					"objectClass": "монета",
+					"sid": 962262238535828
+				},
+				{
+					"id": "add-to-eventvar",
+					"objectClass": "System",
+					"sid": 355214573835889,
+					"parameters": {
+						"variable": "монеты",
+						"value": "1"
+					}
+				}
+			],
+			"sid": 319729695653545
+		}
+	],
+	"sid": 969986732543231
+}
